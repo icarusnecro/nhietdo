@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let degree = parseInt(prompt("nhap nhiet do C can doi:"));
+let Temperature ={
+    degree : degree,
+    changeToF : function (degree) {
+        return degree*1.8 +32;
+    },
+    changeToK : function (degree) {
+        return degree+273;
+    }
+};
+alert(Temperature.changeToF(degree));
+alert(Temperature.changeToK(degree));
+</script>
+</body>
+</html>
